@@ -1,0 +1,44 @@
+.header
+    background-color: #000
+    padding: 1.25rem
+
+    nav
+        display: flex
+        column-gap: 2.875rem
+        a
+            position: relative
+            color: rgba(255, 255, 255, 1)
+            font-family: Gilroy-Light
+            font-size: 1.25rem
+            line-height: 1.5rem
+            transition: color 0.3s ease
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                width: 0
+                height: 2px
+                background: rgba(96, 193, 0, 1)
+                bottom: -4px
+                transition: all 0.3s ease
+            &:hover
+                color: rgba(96, 193, 0, 1)
+            &:hover::before
+                width: 100%
+
+.logo
+  position: relative
+  width: 8.375rem
+  height: 3.75rem
+  img
+    object-fit: contain
+
+.lang-switcher
+    color: rgba(255, 255, 255, 1)
+    font-family: Gilroy-SemiBold
+    font-size: 1.5rem
+    font-weight: 400
+    line-height: 1.8125rem
+
+.lang-switcher-and-btn
+    column-gap: 6.9375rem

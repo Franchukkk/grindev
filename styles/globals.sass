@@ -1,0 +1,53 @@
+@import mixins
+    
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+    +media(1024)
+        font-size: 11px
+    +media(1140)
+        font-size: 12px
+    +media(1220)
+        font-size: 13px
+    +media(1335)
+        font-size: 14px
+    +media(1430)
+        font-size: 15px
+    +media(1540)
+        font-size: 16px
+    
+body
+    background: #000 url('/images/background-pattern.svg') center repeat
+    background-position-y: -1.25rem
+    font-family: 'Gilroy-Regular', system-ui, -apple-system, sans-serif
+
+.wrapper
+    width: 90%
+    max-width: 95rem
+    margin: 0 auto
+
+.d-flex
+    display: flex
+
+.flex-between
+    display: flex
+    justify-content: space-between
+
+.justify-center
+    display: flex
+    justify-content: center
+
+.items-center
+    display: flex
+    align-items: center
+
+a
+    display: inline-block
+    text-decoration: none
+
+.green-text
+    color: rgba(96, 193, 0, 1)

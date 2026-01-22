@@ -1,0 +1,45 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 253" width="557" height="253">
+	<defs>
+		<image width="28" height="44" id="img1" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI4IDQ0IiB3aWR0aD0iMjgiIGhlaWdodD0iNDQiPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICM1ZmMxMDAgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSAzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsYXNzPSJzMCIgZD0ibTI2LjUgNTcuNXEtMTIuNSAwLTI1IDAgMC4zOC01LjExLTEtMTAgNS45Mi0xLjQ5IDEyLTEgMC0xNy41IDAtMzUtNiAwLTEyIDAgMC01LjUgMC0xMSAxMy41IDAgMjcgMC0wLjA0IDI4LjUxLTEgNTd6Ii8+Cjwvc3ZnPg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #fefffe } 
+		.s1 { fill: #5fc100 } 
+	</style>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m40.5 1.5q15.01-0.25 30 0.5 7.5 0.73 13 5.5-2.95 7.39-5 15-9.64-1.88-19.5-2-37.99 1-33 39 3.23 17.76 20.5 22.5 9.49 0.75 19 0.5 1.49-7.44 0.5-15-6.14-0.89-12-3-1.91-7.36 0-15 17.13-1.48 34.5-1 0.5 23.52-1 47-29.08 12.2-59 2.5-21.64-10-26.5-33.5-7.36-48.35 38.5-63z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m321.5 1.5q20.01-0.25 40 0.5 48.94 9.11 41.5 58.5-4.22 34.72-38.5 41.5-21.6 2.78-43-0.5-1.99-50.1 0-100zm22 84q36.96 3.04 36-34 2.97-24.38-20-31.5-8.03-0.59-16-1.5 0 33.5 0 67z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m102.5 3.5q22.55-0.53 45 1.5 28.39 7.44 22.5 36.5-2.33 7.17-7 13-4.51 3.26-8.5 7 11.81 18.88 24 37.5-12.34 2.41-25 1-10.81-16.37-20.5-33.5-4.58-1.43-9.5-1 0 17.5 0 35-11.5 0-23 0-0.97-48.83 2-97zm21 45q9.14 0.54 18-1.5 2.75-1.75 4.5-4.5 4.38-10.6-3.5-18.5-9.19-3.27-19-2.5 0 13.5 0 27z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m186.5 3.5q11 0 22 0 0 48.5 0 97-12 0-24 0 0.88-48.5 2-97z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m223.5 3.5q11.51-0.25 23 0.5 19.06 28.87 37 58.5 1.63-29.5 0-59 12 0 24 0 0 48.5 0 97-11.7 0.17-23 0-20.24-29.51-37.5-61-0.75 30.5-0.5 61-11.5 0-23 0 0-48.5 0-97z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m436.5 30.5q44.88-3.11 40 42-22.02-0.2-44 1 0.58 9.85 10 13.5 13.7 3.15 27-1.5 2.46 5.13 3 11-0.04 2.29-2 3.5-16.9 4.49-34 2-25.13-7.98-26-34.5 0.91-27.43 26-37zm-5 27q0.16 1.41 1 2.5 13.05 1.12 26-0.5-0.77-17.26-18-15-7.38 4.4-9 13z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m534.5 30.5q10.55-0.5 21 1-14.59 34.68-30 69-9.33 1.96-18.5 0-14.61-34.21-27.5-69 10.88-0.47 21.5 1 7.73 23.68 16 47 8.91-24.48 17.5-49z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m135.5 120.5q12.5 0 25 0-0.38 5.11 1 10-5.92 1.49-12 1 0 17.5 0 35 6 0 12 0 0 5.5 0 11-13.5 0-27 0 0.04-28.51 1-57z"/>
+	</g>
+	<g>
+		<use id="Layer copy 3" href="#img1" transform="matrix(1,0,0,1,398,120)"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m463.5 135.5q0.81 0.09 1 1-32.77 68.52-103 97.5-75.89 29.3-155 10-49.61-14.05-87-49 127.24 58.27 257 5 51.15-22.06 87-64.5z"/>
+	</g>
+	<g>
+		<path id="Layer copy" fill-rule="evenodd" class="s1" d="m189.5 138.5q8.5 0 17 0 0 11 0 22-8.5 0-17 0 0-11 0-22z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m354.5 138.5q8.5 0 17 0 0 11 0 22-8.5 0-17 0 0-11 0-22z"/>
+	</g>
+</svg>
