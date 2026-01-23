@@ -73,6 +73,12 @@
   height: 2.9375rem
   background: url('/images/slider-arrow.svg') center no-repeat
   background-size: contain
+  cursor: pointer
+  transition: transform 0.3s ease
+  &:hover
+    transform: scale(1.15)
 
 .arrow-left
   transform: rotate(180deg)
+  &:hover
+    transform: rotate(180deg) scale(1.15)

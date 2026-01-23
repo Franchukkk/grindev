@@ -28,6 +28,32 @@ body
     z-index: 1
     background-attachment: fixed
 
+/* ==== Custom Scrollbar for entire site ==== */
+
+body
+  /* Chrome, Edge, Safari */
+  &::-webkit-scrollbar
+    width: 12px
+    height: 12px
+
+  &::-webkit-scrollbar-track
+    background: rgba(0,0,0,0.05)
+    border-radius: 12px
+
+  &::-webkit-scrollbar-thumb
+    background: rgba(96,193,0,0.8)
+    border-radius: 12px
+    border: 3px solid rgba(0,0,0,0.05)
+    transition: background 0.3s ease
+
+  &::-webkit-scrollbar-thumb:hover
+    background: rgba(96,193,0,1)
+
+/* Firefox */
+*
+  scrollbar-width: thin
+  scrollbar-color: rgba(96,193,0,0.8) rgba(0,0,0,0.05)
+
 .wrapper
     width: 90%
     max-width: 95rem

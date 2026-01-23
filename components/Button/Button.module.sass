@@ -3,11 +3,25 @@
     width: 19.6875rem
     height: 4.0625rem
     border-radius: 1.25rem
-    background: rgba(96, 193, 0, 1) no-repeat
+    background: linear-gradient(to right, rgba(96, 193, 0, 1) 50%, transparent 50%) no-repeat
+    background-size: 200%
     color: rgba(0, 0, 0, 1)
     font-family: Gilroy-Bold
     font-size: 1.125rem
     line-height: 1.375rem
+    transition: all 0.3s ease-in-out
+    border: 0.125rem solid rgba(96, 193, 0, 1)
+    backdrop-filter: blur(0)
+
+    &:hover
+        background-position: 100%
+        color: #fff
+        border: 0.125rem solid rgba(96, 193, 0, 1)
+        backdrop-filter: blur(10px)
+        cursor: pointer
+        &::before
+            filter: brightness(0) invert(1)
+
 
 
 .primary-arrow
@@ -20,6 +34,7 @@
         height: 2.015rem
         right: 2.4375rem
         background: url('/images/arrow.svg') center no-repeat
+        transition: filter 0.3s ease
 
 .primary-tg 
     padding-left: 2.75rem
@@ -37,7 +52,14 @@
 .secondary-border
     border: 0.125rem solid rgba(96, 193, 0, 1)
     border-radius: 1.25rem
-    background: transparent
+    background: linear-gradient(to right, transparent 50%, rgba(96, 193, 0, 1) 50%) no-repeat
+    background-size: 200%
     color: rgba(255, 255, 255, 1)
     font-style: italic
     justify-content: center
+    &:hover
+        background-position: 100%
+        color: rgba(0, 0, 0, 1)
+        backdrop-filter: blur(0)
+        &::before
+            filter: none
