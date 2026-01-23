@@ -1,0 +1,27 @@
+.background-blobs
+    position: fixed
+    inset: 0
+    z-index: -1
+    pointer-events: none
+    overflow: hidden
+
+.blob
+    position: absolute
+    width: 14rem
+    height: 14rem
+    border-radius: 50%
+    backdrop-filter: blur(30px)
+    background: rgba(96, 193, 0, 0.5)
+    transition: top 6s ease-in-out, left 6s ease-in-out, transform 6s ease-in-out, opacity 3s ease-in-out
+    opacity: 1
+    animation: pulse 4s ease-in-out infinite
+
+@keyframes pulse
+    0%, 100%
+        filter: blur(30px)
+        opacity: 0.6
+    50%
+        filter: blur(45px)
+        opacity: 1
+
+

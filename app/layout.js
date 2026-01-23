@@ -1,8 +1,9 @@
 import '@/styles/globals.sass'
 import '@/styles/fonts.sass'
 import Header from '@/components/Header/Header'
-import '@/components/Header/Header.sass'
 import Footer from '@/components/Footer/Footer'
+import BackgroundBlobs from '@/components/BackgroundBlobs/BackgroundBlobs'
+import '@/components/Header/Header.sass'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body>
+        <BackgroundBlobs />
         <Header />
         <main>{children}</main>
         {/* <Footer /> */}

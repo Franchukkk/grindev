@@ -1,0 +1,88 @@
+.services
+    h2
+        margin-bottom: 4.0625rem
+    h3
+        color: rgba(255, 255, 255, 1)
+        font-family: Gilroy-Regular
+        font-size: 2.5rem
+        font-weight: 400
+        line-height: 3rem
+
+.services-cta
+    margin-bottom: 2.78125rem
+
+.services-table
+    width: 100%
+    max-width: 52.3125rem
+    h3
+        position: relative
+        color: rgba(255, 255, 255, 1)
+        font-family: Gilroy-Bold
+        font-style: italic
+        font-size: 3rem
+        font-weight: 400
+        margin-bottom: 0.4375rem
+
+        &::before
+            content: '[ 1 ]'
+            position: absolute
+            display: inline-block
+            color: rgba(189, 189, 189, 1)
+            font-family: Gilroy-Bold
+            font-style: italic
+            font-size: 1rem
+            line-height: 1.1875rem
+            top: 0
+            left: -2.375rem
+            
+    ul
+        display: flex
+        column-gap: 1.5rem
+        li
+            position: relative
+            color: rgba(255, 255, 255, 1)
+            font-family: Gilroy-Light
+            font-size: 1.25rem
+            font-weight: 400
+            line-height: 1.5rem
+            list-style: none
+            &::after
+                content: ''
+                position: absolute
+                display: inline-block
+                width: 0.4rem
+                height: 0.4rem
+                background: #fff
+                border-radius: 50%
+                top: 50%
+                right: -0.95rem
+                transform: translateY(-50%)
+        li:last-child::after
+            display: none
+    td
+        padding: 1rem 0
+        padding-left: 2.5625rem
+        border-bottom: 1px solid rgba(189, 189, 189, 1)
+    tr:first-child
+        td
+            border-top: 1px solid rgba(189, 189, 189, 1)
+    tr:nth-child(2) h3::before
+            content: '[ 2 ]'
+    tr:last-child h3::before
+            content: '[ 3 ]'
+    a
+        width: 3.4375rem
+        height: 3.4375rem
+        background: url('/images/bold-arrow.svg') center no-repeat
+        transition: background 0.2s ease
+        &:hover
+            background: url('/images/bold_arrow-right.svg') center no-repeat
+                
+.technologies-circle
+    background: radial-gradient(circle, rgba(96, 193, 0, 0.7) 20%, rgba(96, 193, 0, 0.5) 30%,  transparent 50%)
+    animation: rounding 20s linear infinite
+@keyframes rounding
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)

@@ -1,4 +1,4 @@
-@import mixins
+@use "mixins" as m
     
 * 
     margin: 0
@@ -7,27 +7,39 @@
 
 html
     font-size: 10px
-    +media(1024)
+    +m.media(1024)
         font-size: 11px
-    +media(1140)
+    +m.media(1140)
         font-size: 12px
-    +media(1220)
+    +m.media(1220)
         font-size: 13px
-    +media(1335)
+    +m.media(1335)
         font-size: 14px
-    +media(1430)
+    +m.media(1430)
         font-size: 15px
-    +media(1540)
+    +m.media(1540)
         font-size: 16px
     
 body
+    position: relative
     background: #000 url('/images/background-pattern.svg') center repeat
     background-position-y: -1.25rem
     font-family: 'Gilroy-Regular', system-ui, -apple-system, sans-serif
+    z-index: 1
+    background-attachment: fixed
 
 .wrapper
     width: 90%
     max-width: 95rem
+    margin: 0 auto
+
+.wrapper-md
+    margin-left: auto
+    padding-left: 2.75rem
+
+.wrapper-sm
+    max-width: 80.625rem
+    max-width: 80.625rem
     margin: 0 auto
 
 .d-flex
@@ -51,3 +63,9 @@ a
 
 .green-text
     color: rgba(96, 193, 0, 1)
+
+.text-bold
+    font-family: Gilroy-Bold
+
+.text-italic
+    font-style: italic
