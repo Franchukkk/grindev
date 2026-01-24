@@ -1,0 +1,77 @@
+.image-wrapper
+    position: relative
+    width: 100%
+    aspect-ratio: 400 / 350
+
+
+.case-card
+    position: relative
+    border-radius: 0.625rem
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    background: rgba(19, 21, 25, 0.7)
+    padding: 0.625rem
+    overflow: hidden
+
+    h3
+        font-family: Gilroy-Bold
+        font-style: italic
+        color: #fff
+        font-size: 1.5rem
+        font-weight: 400
+        line-height: 1.5em
+    p
+        color: rgba(189, 189, 189, 1)
+        font-family: Gilroy-Regular
+        font-style: italic
+        font-size: 1rem
+        margin-bottom: 0.75rem
+
+    &:hover .case-link-arrow
+        filter: brightness(1) invert(0)
+
+    &:hover .case-category
+        top: 0.7rem
+        opacity: 1
+
+
+.bottom-case-line
+    align-items: start
+
+.case-technologies
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+
+.case-link-arrow
+    width: 3.125rem
+    height: 3.125rem
+    background: url('/images/bold_arrow-right.svg') center no-repeat
+    filter: brightness(0) invert(1)
+    transition: all 0.3s ease
+    transform: rotate(45deg)
+
+.case-technology
+    color: rgba(189, 189, 189, 1)
+    font-family: Gilroy-Regular
+    font-size: 0.7rem
+    font-weight: 400
+    border-radius: 3px
+    background: rgba(31, 31, 31, 1)
+    padding: 3px 4px
+
+.case-category
+    position: absolute
+    color: rgba(0, 0, 0, 1)
+    font-family: Gilroy-Regular
+    font-size: 0.8125rem
+    font-weight: 400
+    line-height: 1rem
+    box-sizing: border-box
+    border: 0.5px solid rgba(0, 0, 0, 1)
+    border-radius: 7px
+    background: rgba(96, 193, 0, 1)
+    padding: 0.3125rem 1.25rem
+    top: -5rem
+    right: 0.7rem
+    opacity: 0
+    transition: all 0.3s ease
