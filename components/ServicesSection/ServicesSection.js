@@ -11,7 +11,7 @@ export default function ServicesSection() {
     <section className="services wrapper-sm">
         <Title>Послуги</Title>
         <div className="flex-between items-center services-cta">
-            <h3>Як <span className='text-bold'>ми</span> виведемо <span className='text-bold'>ваш</span> бізнес на новий рівень</h3>
+            <h3>Як <span className='text-bold'>ми</span> виведемо <span className='text-bold'>ваш бізнес</span> на новий рівень</h3>
             <Button variant="primary-arrow">ОБГОВОРИТИ ПРОЄКТ</Button>
         </div>
         <div className="services-list flex-between">

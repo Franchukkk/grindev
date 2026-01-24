@@ -23,6 +23,7 @@
         font-size: 3rem
         font-weight: 400
         margin-bottom: 0.4375rem
+        transition: color .3s ease
 
         &::before
             content: '[ 1 ]'
@@ -64,6 +65,12 @@
         padding: 1rem 0
         padding-left: 2.5625rem
         border-bottom: 1px solid rgba(189, 189, 189, 1)
+        cursor: pointer
+        &:hover h3
+            color: rgba(96, 193, 0, 1)
+        &:hover a
+            filter: brightness(1)
+            transform: rotate(45deg)
     tr:first-child
         td
             border-top: 1px solid rgba(189, 189, 189, 1)
@@ -74,10 +81,9 @@
     a
         width: 3.4375rem
         height: 3.4375rem
-        background: url('/images/bold-arrow.svg') center no-repeat
-        transition: background 0.2s ease
-        &:hover
-            background: url('/images/bold_arrow-right.svg') center no-repeat
+        background: url('/images/bold_arrow-right.svg') center no-repeat
+        filter: brightness(5)
+        transition: all 0.3s ease
                 
 .technologies-circle
     background: radial-gradient(circle, rgba(96, 193, 0, 0.7) 20%, rgba(96, 193, 0, 0.5) 30%,  transparent 50%)

@@ -7,14 +7,14 @@
 
 .blob
     position: absolute
-    width: 14rem
-    height: 14rem
+    width: 260px
+    height: 260px
     border-radius: 50%
-    backdrop-filter: blur(30px)
-    background: rgba(96, 193, 0, 0.5)
-    transition: top 6s ease-in-out, left 6s ease-in-out, transform 6s ease-in-out, opacity 3s ease-in-out
-    opacity: 1
+    background: radial-gradient(circle, rgba(96,193,0,0.6) 0%, rgba(96,193,0,0.3) 35%, transparent 70%)
+    filter: blur(35px)
+    transition:  top 6s ease-in-out, left 6s ease-in-out, transform 6s ease-in-out, opacity 3s ease-in-out
     animation: pulse 4s ease-in-out infinite
+    opacity: 0.9
 
 @keyframes pulse
     0%, 100%
