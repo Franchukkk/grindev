@@ -1,0 +1,14 @@
+<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.000000" height="30.000000" fill="none" customFrame="url(#clipPath_0)">
+	<defs>
+		<clipPath id="clipPath_0">
+			<rect width="30.000000" height="30.000000" x="0.000000" y="0.000000" rx="15.000000" fill="rgb(255,255,255)" transform="matrix(-2.77556e-17,-1,1,-2.77556e-17,0,30)" />
+		</clipPath>
+	</defs>
+	<rect id="vuesax/linear/arrow-down" width="30.000000" height="30.000000" x="0.000000" y="0.000000" rx="15.000000" fill="rgb(255,255,255)" fill-opacity="0" transform="matrix(-2.77556e-17,-1,1,-2.77556e-17,0,30)" />
+	<g id="vuesax/linear/arrow-down">
+		<g id="arrow-down">
+			<path id="Vector" d="M19.8 0L11.65 8.15C10.6875 9.1125 9.1125 9.1125 8.15 8.15L0 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(-2.77556e-17,-1,1,-2.77556e-17,11.1875,24.8999)" />
+			<path id="Vector" opacity="0" transform="matrix(-9.47091e-17,1,-1,-9.47091e-17,30,0)" />
+		</g>
+	</g>
+</svg>

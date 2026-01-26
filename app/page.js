@@ -5,6 +5,11 @@ import ServicesSection from "@/components/ServicesSection/ServicesSection"
 import Steps from "@/components/Steps/Steps"
 import DiscussProject from "@/components/DiscussProject/DiscussProject"
 import Cases from "@/components/Cases/Cases"
+import DiscussPrice from "@/components/DiscussPrice/DiscussPrice"
+import Advantages from "@/components/Advantages/Advantages"
+import Banner from "@/components/Banner/Banner"
+import FAQ from "@/components/FAQ/FAQ"
+import Footer from "@/components/Footer/Footer" 
 
 export default function HomePage() {
     return (
@@ -15,6 +20,12 @@ export default function HomePage() {
             <Steps />
             <DiscussProject />
             <Cases />
+            <DiscussPrice />
+            <Advantages />
+            <Banner />
+            <FAQ />
+            <DiscussPrice />
+            <Footer />
         </>
     )
   }

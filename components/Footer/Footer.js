@@ -1,10 +1,38 @@
 'use client'
 
+import './Footer.sass'
 import Link from 'next/link'
-import styles from './Footer.module.sass'
+import Button from '../Button/Button'
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>footer</footer>
+    <footer className="footer">
+      <div className="wrapper">
+        <div className="footer-content">
+          <div className="footer-logo flex-between items-center">
+            <img src="/images/logo.svg" alt="Logo" />
+            <nav>
+              <ul className='flex-between items-center'>
+                <li>
+                  <Link href="/">Головна</Link>
+                </li>
+                <li>
+                  <Link href="/">Наші кейси</Link>
+                </li>
+                <li>
+                  <Link href="/">Послуги</Link>
+                </li>
+              </ul>
+            </nav>
+            <Button variant='primary-tg'>ОБГОВОРИТИ ПРОЄКТ</Button>
+          </div>
+        </div>
+        <hr />
+        <div className="copyright">
+          <p>&copy; Створено командою GRINDev</p>
+        </div>
+      </div>
+      
+    </footer>
   )
 }
