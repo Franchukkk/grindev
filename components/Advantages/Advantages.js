@@ -37,8 +37,8 @@ export default function Advantages() {
                     <p>Ми стаємо вашим зовнішнім ІТ-відділом, який бере на себе всю відповідальність за продукт...</p>
                 </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4">
-                <div className="advantage-item">
+            <div className="col-12 col-md-12 col-lg-4">
+                <div className="advantage-item advantage-item-md-last">
                     <b>04</b>
                     <h3>СТАБІЛЬНІСТЬ І РЕЗУЛЬТАТ</h3>
                     <p>Фокусуємось на довгостроковому ефекті: продукт працює для бізнесу навіть після запуску..</p>

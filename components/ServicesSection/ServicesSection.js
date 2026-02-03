@@ -15,7 +15,7 @@ export default function ServicesSection() {
             <Button variant="primary-arrow">ОБГОВОРИТИ ПРОЄКТ</Button>
         </div>
         <div className="services-list flex-between">
-            <div>
+            <div className='technologies-circle--parent'>
                 <Image className="technologies-circle" src={'/images/technologies.svg'} width={300} height={300} style={{ width: '100%', height: 'auto' }} alt='technologies'></Image>
             </div>
             
@@ -30,8 +30,6 @@ export default function ServicesSection() {
                                         <li>Сайти</li>
                                         <li>Веб-платформи</li>
                                         <li>Web-додатки</li>
-                                        <li>Адмін-панелі</li>
-                                        <li>Інтеграції</li>
                                     </ul>
                                 </div>
                                 <Link href="#"></Link>
@@ -46,7 +44,6 @@ export default function ServicesSection() {
                                     <ul>
                                         <li>Веб продуктів</li>
                                         <li>Мобільних продуктів</li>
-                                        <li>Адаптивні інтерфейси</li>
                                     </ul>
                                 </div>
                                 <Link href="#"></Link>
@@ -63,7 +60,6 @@ export default function ServicesSection() {
                                         <li>Google Ads</li>
                                         <li>Аналітика</li>
                                         <li>Оптимізація</li>
-                                        <li>Розвиток продукту</li>
                                     </ul>
                                 </div>
                                 <Link href="#"></Link>

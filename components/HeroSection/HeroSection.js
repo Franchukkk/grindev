@@ -47,20 +47,20 @@ export default function HeroSection() {
     <section className="hero wrapper">
       <div className="row hero-content items-center">
         {/* Ліва частина: заголовок і кнопки */}
-        <div className="col-12 col-md-6 hero-left">
+        <div className="col-12 col-md-12 col-lg-6 hero-left">
           <h1>
-            Ми займаємось <span className="handwritten-text">{text}</span>
+            Ми займаємось<br /> <span className="handwritten-text">{text}</span>
           </h1>
           <p>
             Веб-сайти, платформи, мобільні додатки та сервіси з фокусом на стабільність, швидкість і результат.
           </p>
 
           <div className="hero-buttons-line">
-            <div className="row g-5">
-              <div className="col-12 col-md-6">
+            <div className="row gx-5 gy-3">
+              <div className="col-12 col-sm-6 col-md-6">
                 <Button variant="primary-tg">ОБГОВОРИТИ ПРОЄКТ</Button>
               </div>
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-sm-6 col-md-6">
                 <Button variant="secondary-border">НАШІ КЕЙСИ</Button>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
 
         {/* Права частина: слайдер */}
-        <div className="col-12 col-md-6 hero-right">
+        <div className="col-12 col-md-12 col-lg-6 hero-right">
           <HeroSlider images={sliderImages} />
         </div>
       </div>

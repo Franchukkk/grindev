@@ -1,16 +1,24 @@
+@use '../../styles/mixins' as m
+    
 .about
     border-radius: 5.625rem
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
     background: rgba(19, 21, 25, 0.7)
-    padding: 8.3125rem 0 9.0625rem
+    padding: 2rem 0 4rem
     margin-bottom: 6.5rem
+    +m.media(991)
+        padding: 8.3125rem 0 9.0625rem
 
     p
         color: #fff
         font-family: Gilroy-Regular
-        font-size: 2.5rem
+        font-size: 1.8rem
         font-weight: 400
-        line-height: 3rem
+        line-height: 1.2em
+        +m.media(380)
+            font-size: 2rem
+        +m.media(450)
+            font-size: 2.5rem
         &:first-child
             margin-bottom: 3rem
 
@@ -22,19 +30,26 @@
     width: 100%
     border-collapse: separate
     border-spacing: 0 3.1875rem
+    tr
+        width: 100%
     td
-        width: 20rem
+        width: 100%
         min-height: 150px
         border-left: 0.14375rem solid rgba(96, 193, 0, 1)
         padding-left: 1.696875rem
         margin-bottom: 3.1875rem
 
+        +m.media(992)
+            width: 20rem
+
         h3
             color: rgba(255, 255, 255, 1)
             font-family: Gilroy-Regular
-            font-size: 3rem
+            font-size: 2.5rem
             font-weight: 400
-            line-height: 3.625rem
+            line-height: 1.2em
+            +m.media(450)
+                font-size: 3rem
 
             &.green-text
                 font-family: Gilroy-ExtraBold
@@ -43,12 +58,17 @@
 
         p
             font-family: Gilroy-Regular
-            font-size: 2.25rem
+            font-size: 1.7rem
             font-weight: 400
-            line-height: 2.6875rem
+            line-height: 1.2em
+            +m.media(380)
+                font-size: 1.9rem
+            +m.media(450)
+                font-size: 2.25rem
 
 .about-description
-    max-width: 38.375rem
+    +m.media(992)
+        max-width: 38.375rem
 
 .about-info-table h3
   font-size: 2.5rem
@@ -61,3 +81,20 @@
   to
     opacity: 1
     transform: translateY(0)
+
+.about-info-table--parent
+    margin: 0 auto
+    width: 100%
+    +m.media(576)
+        width: 80%
+    +m.media(710)
+        width: 60%
+        min-width: 320px
+    +m.media(992)
+        width: auto
+
+.about-gap
+    flex-direction: column-reverse
+    row-gap: 1rem
+    +m.media(992)
+        flex-direction: row

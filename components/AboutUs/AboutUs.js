@@ -58,7 +58,7 @@ export default function AboutUs() {
     <section className="about" ref={sectionRef}>
       <div className="wrapper">
         <div className="wrapper-md">
-          <div className="items-center flex-between">
+          <div className="items-center flex-between flex-wrap about-gap">
             <div className="about-description">
               <p>
                 Розробників багато, але відповідальність за кінцевий результат не
@@ -71,7 +71,7 @@ export default function AboutUs() {
               </p>
             </div>
 
-            <div>
+            <div className='about-info-table--parent'>
               <table className="about-info-table">
                 <tbody>
                   <tr>

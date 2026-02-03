@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as m
+
 .footer
     padding: 4.4375rem 0 4rem
     border-radius: 3.125rem 3.125rem 0px 0px
@@ -7,15 +9,23 @@
         width: 8.375rem
         object-fit: contain
     ul
-        gap: 1.25rem
+        column-gap: 1.25rem
+        row-gap: 1rem
+        flex-direction: column
+        align-items: start
+        +m.media(769)
+            align-items: center
+            flex-direction: row
     li
         list-style: none
         a
             position: relative
             color: rgba(255, 255, 255, 1)
             font-family: Gilroy-Regular
-            font-size: 1.25rem
+            font-size: 1.6rem
             line-height: 1.5
+            +m.media(769)
+                font-size: 1.25rem
             &::before
                 content: ''
                 position: absolute
@@ -45,3 +55,15 @@
     line-height: 1.5rem
     p
         text-align: center
+
+.footer-logo
+    row-gap: 2rem
+    flex-direction: column
+    align-items: start
+    +m.media(769)
+        align-items: center
+        flex-direction: row
+
+.footer-logo-image
+    +m.media(769)
+        min-width: 19.6875rem

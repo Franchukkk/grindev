@@ -9,10 +9,10 @@ export default function Footer() {
     <footer className="footer">
       <div className="wrapper">
         <div className="footer-content">
-          <div className="footer-logo flex-between items-center">
-            <img src="/images/logo.svg" alt="Logo" />
+          <div className="footer-logo flex-between">
+            <div className="footer-logo-image"><img src="/images/logo.svg" alt="Logo" /></div>
             <nav>
-              <ul className='flex-between items-center'>
+              <ul className='flex-between'>
                 <li>
                   <Link href="/">Головна</Link>
                 </li>

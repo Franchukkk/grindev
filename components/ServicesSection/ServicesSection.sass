@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as m
+    
 .services
     margin-bottom: 7.0625rem
     h2
@@ -5,16 +7,42 @@
     h3
         color: rgba(255, 255, 255, 1)
         font-family: Gilroy-Regular
-        font-size: 2.5rem
+        font-size: 1.6rem
         font-weight: 400
         line-height: 3rem
+        +m.media(992)
+            font-size: 2.5rem
 
 .services-cta
+    display: none
+    flex-wrap: wrap
+    justify-content: center
+    row-gap: 0.8rem
+    column-gap: 1.5rem
     margin-bottom: 2.78125rem
+    +m.media(714)
+        display: flex
+    +m.media(769)
+        justify-content: space-between
+        flex-wrap: nowrap
+    
+
+.services-list
+    flex-direction: column-reverse
+    +m.media(992)
+        flex-direction: row
+
+.technologies-circle--parent
+    display: none
+    width: 280px
+    margin: 0 auto
+    +m.media(992)
+        display: block
 
 .services-table
     width: 100%
-    max-width: 52.3125rem
+    +m.media(992)
+        max-width: 52.3125rem
     h3
         position: relative
         color: rgba(255, 255, 255, 1)
@@ -39,7 +67,9 @@
             
     ul
         display: flex
+        flex-wrap: wrap
         column-gap: 1.5rem
+        row-gap: 0.5rem
         li
             position: relative
             color: rgba(255, 255, 255, 1)
@@ -79,11 +109,15 @@
     tr:last-child h3::before
             content: '[ 3 ]'
     a
+        display: none
         width: 3.4375rem
         height: 3.4375rem
         background: url('/images/bold_arrow-right.svg') center no-repeat
+        background-size: contain
         filter: brightness(0) invert(1)
         transition: all 0.3s ease
+        +m.media(375)
+            display: inline-block
                 
 .technologies-circle
     background: radial-gradient(circle, rgba(96, 193, 0, 0.7) 20%, rgba(96, 193, 0, 0.5) 30%,  transparent 50%)

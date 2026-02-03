@@ -19,6 +19,8 @@ html
         font-size: 15px
     +m.media(1540)
         font-size: 16px
+    +m.media(2000)
+        font-size: 18px
     
 body
     position: relative
@@ -49,7 +51,8 @@ body
   &::-webkit-scrollbar-thumb:hover
     background: rgba(96,193,0,1)
 
-
+.relative
+    position: relative
 
 .wrapper
     width: 90%
@@ -57,13 +60,21 @@ body
     margin: 0 auto
 
 .wrapper-md
-    margin-left: auto
-    padding-left: 2.75rem
+    width: 90%
+    margin: 0 auto
+    +m.media(769)
+        width: 100%
+        padding-left: 2.75rem
+        margin: 0
+        margin-left: auto
 
 .wrapper-sm
     max-width: 80.625rem
     max-width: 80.625rem
     margin: 0 auto
+    width: 90%
+    +m.media(991)
+        width: 100%
 
 .d-flex
     display: flex
@@ -83,6 +94,9 @@ body
 .items-center
     display: flex
     align-items: center
+
+.flex-wrap
+    flex-wrap: wrap
 
 a
     display: inline-block

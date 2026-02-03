@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as m
+    
 .hero
     padding-top: 13.4375rem
     padding-bottom: 9.75rem
@@ -9,6 +11,12 @@
         font-weight: 400
         line-height: 3.625rem
         margin-bottom: 1rem
+        min-height: 73px
+        +m.media(480)
+            min-height: auto
+        br
+            +m.media(480)
+                display: none
 
     p
         color: rgba(255, 255, 255, 1)
@@ -18,10 +26,17 @@
         line-height: 2.625rem
         margin-bottom: 2.5625rem
 
+.hero-left
+    margin-bottom: 6rem
+    +m.media(992)
+        margin-bottom: 0
+
 .handwritten-text
     position: relative
+    display: inline-block
     font-family: Gilroy-LightItalic
-    padding-left: 0.5rem
+    +m.media(480)
+        padding-left: 0.5rem
     &::after
         content: ''
         position: absolute
@@ -38,4 +53,5 @@
     opacity: 0
 
 .hero-buttons-line
-    max-width: 40.875rem
+    +m.media(769)
+        max-width: 40.875rem

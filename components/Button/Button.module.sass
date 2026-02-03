@@ -1,17 +1,28 @@
+@use '../../styles/mixins' as m
+    
 .button
     position: relative
-    width: 19.6875rem
-    height: 4.0625rem
+    width: 100%
+    height: 4.5rem
     border-radius: 1.25rem
     background: linear-gradient(to right, rgba(96, 193, 0, 1) 50%, transparent 50%) no-repeat
     background-size: 200%
     color: rgba(0, 0, 0, 1)
     font-family: Gilroy-Bold
-    font-size: 1.125rem
+    font-size: 16px
     line-height: 1.375rem
     transition: all 0.3s ease-in-out
     border: 0.125rem solid rgba(96, 193, 0, 1)
     backdrop-filter: blur(0)
+    justify-content: center
+    +m.media(576)
+        max-width: 300px
+    +m.media(769)
+        justify-content: start
+        width: 19.6875rem
+        height: 4.0625rem
+        font-size: 1.125rem
+        max-width: none
 
     &:hover
         background-position: 100%
@@ -21,11 +32,11 @@
         cursor: pointer
         &::before
             filter: brightness(0) invert(1)
+            background-size: contain
 
 
 
 .primary-arrow
-    padding-left: 3.1875rem
     &::before
         content: ''
         position: absolute
@@ -34,10 +45,12 @@
         height: 2.015rem
         right: 2.4375rem
         background: url('/images/arrow.svg') center no-repeat
+        background-size: contain
         transition: filter 0.3s ease
+    +m.media(769)
+        padding-left: 3.1875rem
 
 .primary-tg 
-    padding-left: 2.75rem
     &::before
         content: ''
         position: absolute
@@ -48,6 +61,8 @@
         right: 1.6875rem
         background: url('/images/tg-logo.svg') center no-repeat
         background-size: contain
+    +m.media(769)
+        padding-left: 2.75rem
 
 .secondary-border
     border: 0.125rem solid rgba(96, 193, 0, 1)
