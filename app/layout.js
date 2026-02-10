@@ -9,6 +9,23 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css'
 export const metadata = {
   title: 'GRINDev - агенція веб-розробки',
   description: 'Агенція веб-розробки GRINDev спеціалізується на створенні сучасних, адаптивних та ефективних веб-сайтів і додатків для бізнесу будь-якого масштабу.',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: 'GRINDev - агенція веб-розробки',
+    description: 'Агенція веб-розробки GRINDev спеціалізується на створенні сучасних, адаптивних та ефективних веб-сайтів і додатків для бізнесу будь-якого масштабу.',
+    images: ['/og.jpg'],
+    type: 'website',
+    locale: 'uk_UA',
+  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 2,
+  themeColor: '#0f172a', // опціонально
 }
 
 export default function RootLayout({ children }) {

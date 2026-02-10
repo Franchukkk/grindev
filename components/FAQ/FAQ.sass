@@ -1,7 +1,11 @@
+@use '../../styles/mixins' as m
+    
 .faq
-    margin-bottom: 10.3125rem
+    margin-bottom: 7rem
     h2
-        margin-bottom: 5.375rem
+        margin-bottom: 4.5rem
+        +m.media(480)
+            margin-bottom: 5.375rem
 
 .faq-item
     border-radius: 0.9375rem

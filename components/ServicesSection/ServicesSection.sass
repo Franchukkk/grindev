@@ -48,10 +48,13 @@
         color: rgba(255, 255, 255, 1)
         font-family: Gilroy-Bold
         font-style: italic
-        font-size: 3rem
+        font-size: 3.5rem
         font-weight: 400
-        margin-bottom: 0.4375rem
+        margin-bottom: 1rem
         transition: color .3s ease
+        +m.media(480)
+            font-size: 3rem
+            margin-bottom: 0.4375rem
 
         &::before
             content: '[ 1 ]'
@@ -74,10 +77,12 @@
             position: relative
             color: rgba(255, 255, 255, 1)
             font-family: Gilroy-Light
-            font-size: 1.25rem
+            font-size: 1.4rem
             font-weight: 400
             line-height: 1.5rem
             list-style: none
+            +m.media(480)
+                font-size: 1.25rem
             &::after
                 content: ''
                 position: absolute
@@ -92,7 +97,9 @@
         li:last-child::after
             display: none
     td
-        padding: 1rem 0
+        padding: 2rem 0
+        +m.media(480)
+            padding: 1rem 0
         padding-left: 2.5625rem
         border-bottom: 1px solid rgba(189, 189, 189, 1)
         cursor: pointer

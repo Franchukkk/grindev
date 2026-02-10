@@ -26,6 +26,10 @@ export default function Footer() {
             </nav>
             <Button variant='primary-tg'>ОБГОВОРИТИ ПРОЄКТ</Button>
           </div>
+          <div className="d-flex socials-row">
+            <a href="tel:+380735655611" className='tel'>+38 (073) 565-56-11</a>
+            <a href='https://www.instagram.com/grindev.agency' className='inst'>@grindev.agency</a>
+          </div>
         </div>
         <hr />
         <div className="copyright">

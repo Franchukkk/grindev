@@ -65,7 +65,7 @@ export default function AboutUs() {
                 завжди є частиною процесу.
               </p>
               <p>
-                У <span>GRIN<span className="green-text">Dev</span></span> ми
+                У GRINDev ми
                 розглядаємо веб-продукти як інструмент бізнесу — з фокусом на
                 якість і стабільну роботу після запуску.
               </p>

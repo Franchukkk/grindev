@@ -8,13 +8,13 @@ import Image from 'next/image'
 
 export default function ServicesSection() {
   return (
-    <section className="services wrapper-sm">
+    <section className="services wrapper-sm" id="services">
         <Title>Послуги</Title>
         <div className="flex-between items-center services-cta">
             <h3>Як <span className='text-bold'>ми</span> виведемо <span className='text-bold'>ваш бізнес</span> на новий рівень</h3>
             <Button variant="primary-arrow">ОБГОВОРИТИ ПРОЄКТ</Button>
         </div>
-        <div className="services-list flex-between">
+        <div className="services-list flex-between items-center">
             <div className='technologies-circle--parent'>
                 <Image className="technologies-circle" src={'/images/technologies.svg'} width={300} height={300} style={{ width: '100%', height: 'auto' }} alt='technologies'></Image>
             </div>
@@ -32,7 +32,7 @@ export default function ServicesSection() {
                                         <li>Web-додатки</li>
                                     </ul>
                                 </div>
-                                <Link href="#"></Link>
+                                {/* <Link href="#"></Link> */}
                             </div>
                         </td>
                     </tr>
@@ -46,7 +46,7 @@ export default function ServicesSection() {
                                         <li>Мобільних продуктів</li>
                                     </ul>
                                 </div>
-                                <Link href="#"></Link>
+                                {/* <Link href="#"></Link> */}
                             </div>
                         </td>
                     </tr>
@@ -62,7 +62,7 @@ export default function ServicesSection() {
                                         <li>Оптимізація</li>
                                     </ul>
                                 </div>
-                                <Link href="#"></Link>
+                                {/* <Link href="#"></Link> */}
                             </div>
 
                         </td>

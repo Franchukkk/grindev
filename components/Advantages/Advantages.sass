@@ -1,8 +1,15 @@
+@use '../../styles/mixins' as m
+    
 .advantages
-    margin-bottom: 9.3125rem
+    margin-bottom: 4.5rem
+    +m.media(480)
+        margin-bottom: 9.3125rem
     
 .advantages h2
-    margin-bottom: 6rem
+    margin-bottom: 4.5rem
+    +m.media(480)
+        margin-bottom: 6rem
+
     
 .advantage-item
     border-radius: 0.9375rem
@@ -19,18 +26,22 @@
         color: rgba(255, 255, 255, 1)
         font-family: Gilroy-Bold
         font-style: italic
-        font-size: 1.3rem
+        font-size: 1.7rem
         font-weight: 400
         line-height: 2.125rem
         margin-bottom: 0.5625rem
+        +m.media(480)
+            font-size: 1.3rem
     p
         position: relative
-        max-width: 25rem
         color: rgba(255, 255, 255, 1)
         font-family: Gilroy-Regular
-        font-size: 1.15rem
+        font-size: 1.5rem
         font-weight: 400
         line-height: 1.625rem
+        +m.media(480)
+            max-width: 25rem
+            font-size: 1.15rem
 
 .advantages-grid
     --bs-gutter-x: 3rem
@@ -46,12 +57,14 @@
         display: block
         color: rgba(255, 255, 255, 1)
         font-family: Gilroy-Bold
-        font-size: 1.2rem
+        font-size: 1.5rem
         font-weight: 400
         line-height: 1.8125rem
         text-align: right
         text-decoration: underline
         transition: color .3s ease
+        +m.media(480)
+            font-size: 1.2rem
         &:hover
             color: rgba(96, 193, 0, 1)
     

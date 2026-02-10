@@ -36,8 +36,11 @@
 
 .logo
   position: relative
-  width: 8.375rem
-  height: 3.75rem
+  width: 10.05rem
+  height: 4.5rem
+  +m.media(480)
+    width: 8.375rem
+    height: 3.75rem
   img
     object-fit: contain
 
@@ -70,18 +73,19 @@
     height: 150vh
     background-color: #131519
     backdrop-filter: blur(10px)
-    top: -150vh
-    left: 0
+    top: 0
+    left: 200%
     z-index: -1
-    transition: top 0.3s ease, z-index 0.3s ease
+    transition: all 0.5s linear
     &.active
-        top: 0
+        left: 0
         z-index: 3
     .lang-switcher
         display: inline-block
 
 .burger-menu-top
     padding: 1.25rem
+    min-height: 70px
     img
         width: 8.375rem
         height: 3.75rem
@@ -160,3 +164,17 @@
         transform: translateY(-50%) rotate(45deg)
     &:after
         transform: translateY(-50%) rotate(-45deg)
+
+.socials-row
+    flex-direction: column
+    gap: 1.5rem
+
+.burger-menu-content
+    position: relative
+    height: calc(100vh - 70px)
+    min-height: 500px
+
+.burger-menu .socials-row
+    position: absolute
+    bottom: 4rem
+    left: 0
