@@ -7,6 +7,7 @@ import '@/components/Header/Header.sass'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 
 export const metadata = {
+  metadataBase: new URL('https://grindev.agency'),
   title: 'GRINDev - агенція веб-розробки',
   description: 'Агенція веб-розробки GRINDev спеціалізується на створенні сучасних, адаптивних та ефективних веб-сайтів і додатків для бізнесу будь-якого масштабу.',
   icons: {
