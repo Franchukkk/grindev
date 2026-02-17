@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
         <BackgroundBlobs />
         <Header />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
