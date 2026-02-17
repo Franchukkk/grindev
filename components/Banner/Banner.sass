@@ -1,38 +1,42 @@
 @use '../../styles/mixins' as m
     
-
 .horizontal-banner
-    background: rgba(96, 193, 0, 1)
-    transform: rotate(-3deg)
-    padding: 1.5625rem 0
-    overflow: hidden
-    white-space: nowrap
-    margin-bottom: 4.5rem
-    +m.media(480)
-        margin-bottom: 10.8125rem
+  background: rgba(96, 193, 0, 1)
+  transform: rotate(-3deg)
+  padding: 1.5625rem 0
+  overflow: hidden
+  white-space: nowrap
+  margin-bottom: 4.5rem
+
+  +m.media(480)
+    margin-bottom: 10.8125rem
 
 .marquee
-    width: 100%
-    overflow: hidden
+  width: 100%
+  overflow: hidden
 
 .marquee-track
-    display: inline-flex
-    align-items: center
-    animation: banner-move 15s linear infinite
+  display: flex
+  width: max-content
+  animation: banner-move 35s linear infinite
+
+.marquee-group
+  display: inline-flex
+  align-items: center
 
 .horizontal-banner h2
-    color: rgba(0, 0, 0, 1)
-    font-family: Gilroy-ExtraBold
-    font-style: italic
-    font-size: 3rem
-    font-weight: 400
-    line-height: 3.625rem
-    text-transform: uppercase
-    margin-right: 3rem
-    white-space: nowrap
+  color: rgba(0, 0, 0, 1)
+  font-family: Gilroy-ExtraBold
+  font-style: italic
+  font-size: 3rem
+  font-weight: 400
+  line-height: 3.625rem
+  text-transform: uppercase
+  margin-right: 3rem
+  white-space: nowrap
 
 @keyframes banner-move
-    from
-        transform: translateX(0)
-    to
-        transform: translateX(-50%)
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(-50%)

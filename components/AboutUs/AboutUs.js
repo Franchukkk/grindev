@@ -76,7 +76,7 @@ export default function AboutUs() {
                 <tbody>
                   <tr>
                     <td>
-                      <h3 className="green-text">5+</h3>
+                      <h3 className="green-text">4+</h3>
                       <p>років досвіду</p>
                     </td>
                     <td>

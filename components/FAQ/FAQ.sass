@@ -10,19 +10,23 @@
 .faq-item
     border-radius: 0.9375rem
     background: rgba(19, 21, 25, 1)
-    padding: 1.5rem 1.625rem 1.5rem 3.0625rem
+    padding: 1.5rem 1.625rem 1.5rem 2.0625rem
     margin-bottom: 0.875rem
     cursor: pointer
     overflow: hidden
+    +m.media(480)
+        padding: 1.5rem 1.625rem 1.5rem 3.0625rem
 
     h3
         position: relative
         color: rgba(147, 147, 147, 1)
         font-family: Gilroy-Medium
-        font-size: 1.5rem
+        font-size: 1.7rem
         font-weight: 400
         line-height: 2.375rem
         transition: all .3s ease
+        +m.media(769)
+            font-size: 1.5rem
         &::before
             content: ''
             position: absolute
@@ -46,10 +50,12 @@
     p
         margin: 0
         color: rgba(255, 255, 255, 1)
-        font-family: Gilroy-Medium
-        font-size: 1.35rem
-        line-height: 2.375rem
+        font-family: Gilroy-Regular
+        font-size: 1.5rem
+        line-height: 1.76em
         padding-top: 2rem
+        +m.media(769)
+            font-size: 1.35rem
 
 .faq-title-arrow
     display: flex

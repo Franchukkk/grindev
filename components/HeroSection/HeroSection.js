@@ -7,7 +7,7 @@ import Button from '@/components/Button/Button'
 import HeroSlider from '@/components/HeroSlider/HeroSlider'
 
 export default function HeroSection() {
-  const words = ["Сайтами", "Додатками", "Дизайном", "Просуванням"]
+  const words = ["Сайтами", "Додатками", "Дизайном"]
   const [text, setText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)

@@ -13,13 +13,20 @@ export default function Steps() {
     const line = lineRef.current
     if (!content || !line) return
 
-    // Вся ширина скрол-контенту
-    const full = content.scrollWidth
+    const isMobile = window.matchMedia('(max-width: 768px)').matches
 
-    // Якщо line має left: 9rem — треба відняти цей офсет, щоб лінія не вилізла за контент
+    if (isMobile) {
+      // Вертикальна лінія: висота = висота контейнера
+      line.style.width = ''              // прибираємо inline width
+      line.style.height = `${content.scrollHeight}px`
+      return
+    }
+
+    // Desktop: горизонтальна лінія як було
+    line.style.height = '' // скидаємо, якщо раптом було з мобілки
+    const full = content.scrollWidth
     const left = parseFloat(getComputedStyle(line).left) || 0
     const width = Math.max(0, full - left)
-
     line.style.width = `${width}px`
   }
 
@@ -31,14 +38,11 @@ export default function Steps() {
     const content = contentRef.current
     if (!content) return
 
-    // 1) Resize вікна
     window.addEventListener('resize', updateLine)
 
-    // 2) Якщо зміниться розмір/контент всередині (шрифти, брейкпоінти, інше)
     const ro = new ResizeObserver(() => updateLine())
     ro.observe(content)
 
-    // 3) На випадок, якщо шрифти підвантажуються пізніше і міняють ширину
     if (document.fonts?.ready) {
       document.fonts.ready.then(updateLine).catch(() => {})
     }
