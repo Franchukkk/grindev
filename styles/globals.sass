@@ -31,8 +31,11 @@ body
     z-index: 1
 
 html, body
-    overscroll-behavior: none
     overflow-x: hidden
+
+@supports (-webkit-overflow-scrolling: touch)
+    html, body
+        overscroll-behavior: none
 
 /* ==== Custom Scrollbar for entire site ==== */
 
@@ -138,19 +141,10 @@ ul, li
         background-image: url('/images/call.svg')
         background-repeat: no-repeat
         background-size: contain
-    &::after
-        content: ''
-        position: absolute
-        display: inline-block
-        width: 0%
-        height: 2px
-        background: rgba(96, 193, 0, 1)
-        bottom: -4px
-        left: 1.95rem
-        transition: all .3s ease
     &:hover
-        &::after
-            width: calc( 100% - 1.95rem )
+        text-decoration: underline
+        text-decoration-thickness: 2px
+        
 
 .inst
     position: relative
@@ -172,16 +166,6 @@ ul, li
         background-image: url('/images/inst-ico.svg')
         background-repeat: no-repeat
         background-size: contain
-    &::after
-        content: ''
-        position: absolute
-        display: inline-block
-        width: 0%
-        height: 2px
-        background: rgba(96, 193, 0, 1)
-        bottom: -4px
-        left: 1.95rem
-        transition: all .3s ease
     &:hover
-        &::after
-            width: calc( 100% - 1.95rem )
+        text-decoration: underline
+        text-decoration-thickness: 2px

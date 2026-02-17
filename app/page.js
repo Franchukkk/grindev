@@ -20,7 +20,6 @@ export default function HomePage() {
             <Steps />
             <DiscussProject />
             <Cases />
-            <DiscussPrice />
             <Advantages />
             <Banner />
             <FAQ />
