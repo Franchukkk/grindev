@@ -14,7 +14,7 @@ export default function Button({
   `
 
   return (
-    <a href='#' className={buttonClass} {...props}>
+    <a href='https://t.me/grindev_agency' className={buttonClass} {...props}>
       {children}
     </a>
   )

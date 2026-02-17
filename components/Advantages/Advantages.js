@@ -26,7 +26,7 @@ export default function Advantages() {
             <div className="col-12 col-md-6 col-lg-4">
                 <div className="advantage-item cta-advantage-item">
                     <p>Залиш заявку - проведемо аналіз і розкажемо, в якому напрямку рухатись.</p>
-                    <Link href="#" className="advantage-link-button">ОБГОВОРИТИ ПРОЄКТ</Link>
+                    <a href="https://t.me/grindev_agency" className="advantage-link-button">ОБГОВОРИТИ ПРОЄКТ</a>
                 </div>
             </div>
 
