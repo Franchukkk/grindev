@@ -24,7 +24,6 @@ export default function HomePage() {
             <Banner />
             <FAQ />
             <DiscussPrice />
-            <Footer />
         </>
     )
   }
