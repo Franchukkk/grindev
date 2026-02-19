@@ -108,7 +108,6 @@ export default function Header() {
 
           <Button
             variant="primary-arrow"
-            onClick={handleNavClick}
           >
             ОБГОВОРИТИ ПРОЄКТ
           </Button>

@@ -9,6 +9,7 @@ import DiscussPrice from "@/components/DiscussPrice/DiscussPrice"
 import Advantages from "@/components/Advantages/Advantages"
 import Banner from "@/components/Banner/Banner"
 import FAQ from "@/components/FAQ/FAQ"
+import AppLoading from '@/components/loaders/AppLoading/AppLoading'
 import Footer from "@/components/Footer/Footer" 
 
 export default function HomePage() {

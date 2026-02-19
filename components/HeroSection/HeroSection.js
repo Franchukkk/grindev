@@ -34,13 +34,8 @@ export default function HeroSection() {
   }, [text, isDeleting, wordIndex, words])
 
   const sliderImages = [
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
-    '/images/portfolio-mevis.webp',
+    '/images/Ariet.png',
+    '/images/TT.png',
   ]
 
   return (
@@ -52,7 +47,7 @@ export default function HeroSection() {
             Ми займаємось<br /> <span className="handwritten-text">{text}</span>
           </h1>
           <p>
-            Веб-сайти, платформи, мобільні додатки та сервіси з фокусом на стабільність, швидкість і результат.
+          Веб-рішення, що тримають навантаження, масштабуються з бізнесом та дають результат.
           </p>
 
           <div className="hero-buttons-line">
