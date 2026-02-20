@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer'
 import BackgroundBlobs from '@/components/BackgroundBlobs/BackgroundBlobs'
 import '@/components/Header/Header.sass'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import AppLoading from '@/components/loaders/AppLoading/AppLoading'
 
 export const metadata = {
   metadataBase: new URL('https://grindev.agency'),
@@ -81,6 +82,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body>
+        <AppLoading />
         <BackgroundBlobs />
         <Header />
         <main>{children}</main>

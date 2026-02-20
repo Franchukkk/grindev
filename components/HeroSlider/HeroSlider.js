@@ -78,6 +78,7 @@ export default function HeroSlider({ images }) {
               fill
               style={{ objectFit: 'contain' }}
               draggable={false}
+              priority
             />
           </div>
         ))}
