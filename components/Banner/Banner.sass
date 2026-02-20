@@ -9,7 +9,7 @@
   margin-bottom: 4.5rem
 
   +m.media(480)
-    margin-bottom: 10.8125rem
+    margin-bottom: 7rem
 
 .marquee
   width: 100%
@@ -18,22 +18,39 @@
 .marquee-track
   display: flex
   width: max-content
-  animation: banner-move 35s linear infinite
+  animation: banner-move 50s linear infinite
 
 .marquee-group
   display: inline-flex
   align-items: center
 
-.horizontal-banner h2
-  color: rgba(0, 0, 0, 1)
-  font-family: Gilroy-ExtraBold
-  font-style: italic
-  font-size: 3rem
-  font-weight: 400
-  line-height: 3.625rem
-  text-transform: uppercase
-  margin-right: 3rem
-  white-space: nowrap
+.horizontal-banner 
+    ul
+        display: flex
+        gap: 5rem
+        margin-right: 5rem
+    li
+        position: relative
+        color: rgba(0, 0, 0, 1)
+        font-family: Gilroy-ExtraBold
+        font-style: italic
+        font-size: 3rem
+        font-weight: 400
+        line-height: 1.3em
+        text-transform: uppercase
+        white-space: nowrap
+        &::before
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 1rem
+            height: 1rem
+            background: #000
+            border-radius: 50%
+            top: 44%
+            right: -3rem
+            transform: translateY(-50%)
+            
 
 @keyframes banner-move
   from

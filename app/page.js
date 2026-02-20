@@ -19,12 +19,10 @@ export default function HomePage() {
             <AboutUs />
             <ServicesSection />
             <Steps />
-            <DiscussProject />
+            <Banner />
             <Cases />
             <Advantages />
-            <Banner />
             <FAQ />
-            <DiscussPrice />
         </>
     )
   }

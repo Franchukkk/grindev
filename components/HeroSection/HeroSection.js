@@ -34,9 +34,27 @@ export default function HeroSection() {
   }, [text, isDeleting, wordIndex, words])
 
   const sliderImages = [
-    '/images/Ariet.png',
-    '/images/TT.png',
+    '/images/Ariet.webp',
+    '/images/TT.webp',
+    '/images/medicspot.webp',
+    '/images/chargo.webp',
+    '/images/oomen.webp',
+    '/images/stickylemon.webp',
   ]
+
+  const scrollToCases = () => {
+    const el = document.getElementById('cases')
+    if (!el) return
+  
+    const headerOffset = 120 // якщо хедер фіксований
+    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset
+    const offsetPosition = elementPosition - headerOffset
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <section className="hero wrapper">
@@ -56,7 +74,9 @@ export default function HeroSection() {
                 <Button variant="primary-tg">ОБГОВОРИТИ ПРОЄКТ</Button>
               </div>
               <div className="col-12 col-sm-6 col-md-6">
-                <Button variant="secondary-border">НАШІ КЕЙСИ</Button>
+              <Button variant="secondary-border" onClick={scrollToCases}>
+                НАШІ КЕЙСИ
+              </Button>
               </div>
             </div>
           </div>
