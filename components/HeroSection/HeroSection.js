@@ -40,6 +40,7 @@ export default function HeroSection() {
     '/images/chargo.webp',
     '/images/oomen.webp',
     '/images/stickylemon.webp',
+    '/images/firebox.webp',
   ]
 
   const scrollToCases = () => {

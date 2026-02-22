@@ -3,73 +3,112 @@
 import './ServicesSection.sass'
 import Title from '../Title/Title'
 import Button from '../Button/Button'
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function ServicesSection() {
+
+  const scrollToId = (id) => {
+    if (typeof window === 'undefined') return
+
+    const el = document.getElementById(id)
+    if (!el) return
+
+    const headerOffset = 120
+    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset
+    const offsetPosition = elementPosition - headerOffset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <section className="services wrapper-sm" id="services">
-        <Title>Послуги</Title>
-        <div className="flex-between items-center services-cta">
-            <h3>Як <span className='text-bold'>ми</span> виведемо <span className='text-bold'>ваш бізнес</span> на новий рівень</h3>
-            <Button variant="primary-arrow">ОБГОВОРИТИ ПРОЄКТ</Button>
-        </div>
-        <div className="services-list flex-between items-center">
-            <div className='technologies-circle--parent'>
-                <Image className="technologies-circle" src={'/images/technologies.svg'} width={300} height={300} style={{ width: '100%', height: 'auto' }} alt='technologies'></Image>
-            </div>
-            
-            <table className="services-table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div className="flex-between items-center">
-                                <div>
-                                    <h3>Розробка</h3>
-                                    <ul>
-                                        <li>Сайти</li>
-                                        <li>Веб-платформи</li>
-                                        <li>Web-додатки</li>
-                                    </ul>
-                                </div>
-                                {/* <Link href="#"></Link> */}
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div className="flex-between items-center">
-                                <div>
-                                    <h3>Дизайн</h3>
-                                    <ul>
-                                        <li>Веб продуктів</li>
-                                        <li>Мобільних продуктів</li>
-                                    </ul>
-                                </div>
-                                {/* <Link href="#"></Link> */}
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div className="flex-between items-center">
-                                <div>
-                                    <h3>Просування</h3>
-                                    <ul>
-                                        <li>SEO</li>
-                                        <li>Google Ads</li>
-                                        <li>Аналітика</li>
-                                        <li>Оптимізація</li>
-                                    </ul>
-                                </div>
-                                {/* <Link href="#"></Link> */}
-                            </div>
+      <Title>Послуги</Title>
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+      <div className="flex-between items-center services-cta">
+        <h3>
+          Як <span className='text-bold'>ми</span> виведемо{' '}
+          <span className='text-bold'>ваш бізнес</span> на новий рівень
+        </h3>
+        <Button variant="primary-arrow">
+          ОБГОВОРИТИ ПРОЄКТ
+        </Button>
+      </div>
+
+      <div className="services-list flex-between items-center">
+        <div className='technologies-circle--parent'>
+          <Image 
+            className="technologies-circle" 
+            src={'/images/technologies.svg'} 
+            width={300} 
+            height={300} 
+            style={{ width: '100%', height: 'auto' }} 
+            alt='technologies' 
+          />
         </div>
+
+        <table className="services-table">
+          <tbody>
+
+            <tr>
+              <td>
+                <div 
+                  className="flex-between items-center service-item" 
+                  onClick={() => scrollToId('cases')}
+                >
+                  <div>
+                    <h3>Розробка</h3>
+                    <ul>
+                      <li>Сайти</li>
+                      <li>Веб-платформи</li>
+                      <li>Web-додатки</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div 
+                  className="flex-between items-center service-item" 
+                  onClick={() => scrollToId('cases')}
+                >
+                  <div>
+                    <h3>Дизайн</h3>
+                    <ul>
+                      <li>Веб продуктів</li>
+                      <li>Мобільних продуктів</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div 
+                  className="flex-between items-center service-item" 
+                  onClick={() => scrollToId('cases')}
+                >
+                  <div>
+                    <h3>Просування</h3>
+                    <ul>
+                      <li>SEO</li>
+                      <li>Google Ads</li>
+                      <li>Аналітика</li>
+                      <li>Оптимізація</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
     </section>
   )
 }

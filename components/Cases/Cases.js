@@ -63,6 +63,16 @@ const cases = [
     description:
       "Корпоративний сайт компанії з послуг переїзду та зберігання з багатомовною структурою.",
     technologies: ["UX/UI Design", "Responsive Web", "SEO", "Multi-language"],
+  },
+  {
+    id: 7,
+    href: "https://firebox.com",
+    image: "/images/firebox.webp",
+    category: "Дизайн + Розробка",
+    title: "Firebox",
+    description:
+      "Міжнародний e-commerce магазин оригінальних подарунків та гаджетів з багатою категорією товарів.",
+    technologies: ["E-commerce", "UX/UI Design", "Responsive Web", "API Integration"],
   }
 ]
 
