@@ -37,7 +37,7 @@ const cases = [
   {
     id: 4,
     href: "https://www.stickylemon.nl",
-    image: "/images/medicspot.webp",
+    image: "/images/stickylemon.webp",
     category: "Дизайн + Розробка",
     title: "Sticky Lemon",
     description:
